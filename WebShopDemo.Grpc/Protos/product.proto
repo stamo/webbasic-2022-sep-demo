@@ -1,0 +1,23 @@
+syntax = "proto3";
+import "google/protobuf/empty.proto";
+
+option csharp_namespace = "WebShopDemo.Grpc";
+
+package product;
+
+// The greeting service definition.
+service Product {
+  // Sends a greeting
+  rpc GetAll (google.protobuf.Empty) returns (ProductList);
+}
+
+message ProductList {
+	repeated ProductItem items = 1;
+}
+
+message ProductItem {
+	string id = 1;
+	string name = 2;
+	double price = 3;
+	int32 quantity = 4;
+}

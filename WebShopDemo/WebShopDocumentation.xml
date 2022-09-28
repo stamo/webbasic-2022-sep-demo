@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>WebShopDemo</name>
+    </assembly>
+    <members>
+        <member name="T:WebShopDemo.Controllers.ProductController">
+            <summary>
+            Web shop products
+            </summary>
+        </member>
+        <member name="M:WebShopDemo.Controllers.ProductController.Index">
+            <summary>
+            List all products
+            </summary>
+            <returns></returns>
+        </member>
+    </members>
+</doc>
