@@ -9,6 +9,7 @@
             <td>Price</td>
             <td>Quantity</td>
             <td>Buy</td>
+            <td>Delete</td>
         </tr>
     </thead>
     <tbody>
@@ -19,6 +20,12 @@
                 <td>@item.Price</td>
                 <td>@item.Quantity</td>
                 <td><button class="btn btn-success">Buy</button></td>
+                <td>
+                    <form asp-action="Delete" asp-controller="Product" method="post">
+                        <input name="id" type="hidden" value="@item.Id.ToString()" />
+                        <button type="submit" class="btn btn-danger">Delete</button>
+                    </form>
+                </td>
             </tr>
         }
     </tbody>
